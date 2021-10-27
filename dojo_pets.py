@@ -17,3 +17,5 @@ import pets
 
 toto = pets.Pet()
 toto.info()
+utl.print_desc("toto eats")
+toto.eat().info()

@@ -22,8 +22,10 @@ class Pet:
         pass
 
     # eat() - increases the pet's energy by 5 & health by 10
-    def ear(self):
-        pass
+    def eat(self):
+        self.energy += 5
+        self.health += 10
+        return self
 
     # play() - increases the pet's health by 5
     def play(self):
@@ -37,3 +39,4 @@ class Pet:
     def info(self):
         utl.print_desc_center("Pet Info")
         print(F"Pet Name: {self.name} :: Type : {self.type} :: Tricks : {self.tricks} :: Health : {self.health} :: Energy : {self.energy}")
+        return self
